@@ -1,4 +1,4 @@
-package Game;
+package FirstGame_Snake;
 
 import javax.swing.*;
 

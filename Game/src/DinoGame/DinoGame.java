@@ -1,9 +1,9 @@
-package Game;
+package DinoGame;
 
-public class SnakeGame {
+public class DinoGame {
     public static void main(String[] args) {
 
-        new GameFrame();
+        new GameFrameD();
         //System.out.println("234");
     }
 }

@@ -1,4 +1,4 @@
-package Game;
+package FirstGame_Snake;
 
 import javax.swing.*;
 import javax.swing.Timer;
@@ -50,6 +50,14 @@ public class GamePanel extends JPanel implements ActionListener {
     public void draw(Graphics g){
 
         if(running) {
+            /*//changed from one for to allow for rectangular screen
+            for (int i = 0; i < SCREEN_HEIGHT / UNIT_SIZE; i++) {
+                g.drawLine(0, i * UNIT_SIZE, SCREEN_WIDTH, i * UNIT_SIZE);
+            }
+            for (int i = 0; i < SCREEN_WIDTH / UNIT_SIZE; i++) {
+                g.drawLine(i * UNIT_SIZE, 0, i * UNIT_SIZE, SCREEN_HEIGHT);
+            }
+             */
             for (int i = 0; i < SCREEN_HEIGHT / UNIT_SIZE; i++) {
                 g.drawLine(i * UNIT_SIZE, 0, i * UNIT_SIZE, SCREEN_HEIGHT);
                 g.drawLine(0, i * UNIT_SIZE, SCREEN_WIDTH, i * UNIT_SIZE);
